@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  font-size: 2rem;
+  background-color: @color-complement;
+  padding: 1rem 2rem;
+  border-radius: @border-radius;
+  color: @color-nearblack;
+  .shadow(0px, 2px, 4px);
+  transition: 0.1s ease-out all;
+
+  &:hover {
+    color: @color-white;
+    background-color: darken(@color-complement, 10%);
+    transform: translateY(-2px);
+    .shadow(0px, 4px, 10px);
+  }
+
+  &:active {
+    color: @color-black;
+    transform: translateY(1px);
+    .shadow(0px, 2px, 4px);
+  }
+}

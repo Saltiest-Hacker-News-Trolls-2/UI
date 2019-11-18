@@ -1,4 +1,26 @@
 .home {
-    .flex(column, center, center);
-    height: calc(100vh - @nav-height);
+  height: calc(100vh - @nav-height);
+  .flex(column, center, center);
+
+  background-image: linear-gradient(
+    to bottom right,
+    @color-black,
+    @color-darkgrey
+  );
+
+  .hero {
+    transform: skewX(-10deg);
+    background-color: rgba(@color-offwhite, 0.5);
+    padding: 5rem;
+    .shadow(0px, 2px, 5px);
+
+    .content {
+      .flex(column, center, center);
+      transform: skewX(10deg);
+
+      *:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
 }
