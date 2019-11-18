@@ -146,13 +146,25 @@ h6 {
 .header nav .logo h1:hover {
   color: #292929;
 }
-.header nav .nav-links a {
+.header nav .nav-links .nav-link {
+  display: inline-block;
   color: #292929;
   font-size: 2rem;
 }
-.header nav .nav-links a:not(:last-child) {
+.header nav .nav-links .nav-link:hover {
+  color: #e3e3e3;
+}
+.header nav .nav-links .nav-link:not(:last-child) {
   margin-right: 4rem;
 }
-.header nav .nav-links a:hover {
-  color: #e3e3e3;
+.header nav .nav-links .nav-link div {
+  height: 5rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header nav .nav-links .nav-link div:hover {
+  background-color: #292929;
 }

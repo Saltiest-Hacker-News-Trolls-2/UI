@@ -35,16 +35,27 @@
     }
 
     .nav-links {
-      a {
+      .nav-link {
+        display: inline-block;
         color: @color-nearblack;
         font-size: 2rem;
+
+        &:hover {
+          color: @color-offwhite;
+        }
 
         &:not(:last-child) {
           margin-right: 4rem;
         }
 
-        &:hover {
-          color: @color-offwhite;
+        div {
+          height: @nav-height;
+          padding: 0 1rem;
+          .flex(row, center, center);
+          
+          &:hover {
+            background-color: @color-nearblack;
+          }
         }
       }
     }
