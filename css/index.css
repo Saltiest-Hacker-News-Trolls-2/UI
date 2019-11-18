@@ -107,6 +107,17 @@ h6 {
 .home .container .hero .content *:not(:last-child) {
   margin-bottom: 2rem;
 }
+@media (max-width: 575px) {
+  .home .container {
+    max-width: 90vw;
+  }
+  .home .container .hero {
+    transform: skewX(0deg);
+  }
+  .home .container .hero .content {
+    transform: inherit;
+  }
+}
 .header {
   display: flex;
   flex-direction: row;

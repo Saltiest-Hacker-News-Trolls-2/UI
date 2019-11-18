@@ -28,4 +28,18 @@
       }
     }
   }
+
+  @media @phone {
+    .container {
+      max-width: 90vw;
+
+      .hero {
+        transform: skewX(0deg);
+
+        .content {
+          transform: inherit;
+        }
+      }
+    }
+  }
 }
