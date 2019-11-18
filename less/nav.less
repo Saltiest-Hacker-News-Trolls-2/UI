@@ -52,10 +52,36 @@
           height: @nav-height;
           padding: 0 1rem;
           .flex(row, center, center);
-          
+
           &:hover {
             background-color: @color-nearblack;
           }
+        }
+      }
+    }
+  }
+
+  @media @phone {
+    padding: 0 1rem;
+
+    nav .logo {
+      h1 {
+        display: none;
+      }
+
+      svg {
+        fill: @color-white;
+
+        &:hover {
+          fill: @color-black;
+        }
+      }
+    }
+
+    nav .nav-links {
+      .nav-link {
+        &:not(:last-child) {
+          margin-right: 1rem;
         }
       }
     }

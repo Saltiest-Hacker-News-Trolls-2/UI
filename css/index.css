@@ -94,6 +94,7 @@ h6 {
   transform: skewX(-10deg);
   background-color: rgba(227, 227, 227, 0.5);
   padding: 5rem;
+  text-align: center;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .home .container .hero .content {
@@ -167,4 +168,21 @@ h6 {
 }
 .header nav .nav-links .nav-link div:hover {
   background-color: #292929;
+}
+@media (max-width: 575px) {
+  .header {
+    padding: 0 1rem;
+  }
+  .header nav .logo h1 {
+    display: none;
+  }
+  .header nav .logo svg {
+    fill: #fff;
+  }
+  .header nav .logo svg:hover {
+    fill: #000;
+  }
+  .header nav .nav-links .nav-link:not(:last-child) {
+    margin-right: 1rem;
+  }
 }
