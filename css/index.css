@@ -123,11 +123,27 @@ h6 {
   align-items: center;
   width: 100%;
 }
-.header nav h1 {
+.header nav .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header nav .logo svg {
+  width: 5rem;
+  height: 5rem;
+  transform: scaleX(-1);
+  margin: 0.75rem 0 0 0.5rem;
+}
+.header nav .logo svg:hover {
+  fill: #fff;
+}
+.header nav .logo h1 {
+  display: inline;
   color: #fff;
   font-size: 3rem;
 }
-.header nav h1:hover {
+.header nav .logo h1:hover {
   color: #292929;
 }
 .header nav .nav-links a {

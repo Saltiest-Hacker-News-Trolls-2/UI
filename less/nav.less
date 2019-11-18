@@ -9,12 +9,28 @@
     .flex(row, space-between, center);
     width: 100%;
 
-    h1 {
-      color: @color-white;
-      font-size: 3rem;
+    .logo {
+      .flex(row, center, center);
 
-      &:hover {
-        color: @color-nearblack;
+      svg {
+        width: 5rem;
+        height: 5rem;
+        transform: scaleX(-1);
+        margin: 0.75rem 0 0 0.5rem;
+
+        &:hover {
+          fill: @color-white;
+        }
+      }
+
+      h1 {
+        display: inline;
+        color: @color-white;
+        font-size: 3rem;
+
+        &:hover {
+          color: @color-nearblack;
+        }
       }
     }
 
