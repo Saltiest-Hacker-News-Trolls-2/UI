@@ -1,11 +1,13 @@
 .header {
+  .flex(row, space-between, center);
   background-color: @color-hn;
-  padding: 2rem 4rem;
+  padding: 0 4rem;
   .shadow(0, 5px, 5px);
+  height: @nav-height;
 
   nav {
-    display: flex;
-    justify-content: space-between;
+    .flex(row, space-between, center);
+    width: 100%;
 
     h1 {
       color: @color-white;
