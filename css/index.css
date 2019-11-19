@@ -139,7 +139,7 @@ h6 {
   background-image: linear-gradient(to bottom right, rgba(193, 193, 193, 0.6), rgba(0, 0, 0, 0.4));
 }
 .container {
-  background: #000;
+  background: #0d0d0d;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -163,7 +163,14 @@ h6 {
   background-image: linear-gradient(to bottom right, #00d9ff, #0098b3);
 }
 .container .about .grey {
-  background-image: linear-gradient(to bottom right, #c1c1c1, #5a5a5a);
+  background-image: linear-gradient(to bottom right, #5a5a5a, #292929);
+}
+.container .about .grey h1,
+.container .about .grey h2 {
+  color: #fff;
+}
+.container .about .grey img {
+  filter: invert(100%);
 }
 .container .about .max-height-sm {
   max-height: 10rem;

@@ -1,5 +1,5 @@
 .container {
-  background: @color-black;
+  background: lighten(@color-black, 5%);
   .flex(column, center, center);
 
   .about {
@@ -28,9 +28,17 @@
     .grey {
       background-image: linear-gradient(
         to bottom right,
-        @color-lightgrey,
-        @color-darkgrey
+        @color-darkgrey,
+        @color-nearblack
       );
+
+      h1, h2 {
+        color: @color-white;
+      }
+
+      img {
+          filter: invert(100%);
+      }
     }
 
     .max-height-sm {
