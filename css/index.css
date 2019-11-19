@@ -40,12 +40,20 @@
     transform: translateY(0);
   }
 }
-@keyframes grow {
+@keyframes growAndSkew {
   from {
     transform: scale(0) skewX(10deg);
   }
   to {
     transform: scale(1) skewX(10deg);
+  }
+}
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }
 *,
@@ -170,6 +178,7 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 0.5s ease-in-out forwards;
 }
 .about-container .about {
   display: grid;
@@ -232,6 +241,7 @@ h6 {
   width: 50%;
   min-width: 9rem;
   max-width: 12rem;
+  animation: grow 0.35s ease-in-out forwards;
 }
 .about-container .about .box p {
   font-size: 1.6rem;
