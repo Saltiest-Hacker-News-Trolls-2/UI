@@ -11,7 +11,7 @@
 .about-container {
   background: lighten(@color-black, 5%);
   .flex(column, center, center);
-  animation: fadeIn .5s ease-in-out forwards;
+  animation: fadeIn 0.5s ease-in-out forwards;
 
   .about {
     display: grid;
@@ -94,6 +94,12 @@
       max-height: 20rem;
     }
 
+    .grow-icon {
+      img {
+        animation: grow 0.35s ease-in-out;
+      }
+    }
+
     .box {
       width: 100%;
       padding: 2rem;
@@ -102,7 +108,6 @@
         width: 50%;
         min-width: 9rem;
         max-width: 12rem;
-        animation: grow .35s ease-in-out forwards;
       }
 
       p {

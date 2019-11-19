@@ -233,6 +233,9 @@ h6 {
 .about-container .about .max-height-lg {
   max-height: 20rem;
 }
+.about-container .about .grow-icon img {
+  animation: grow 0.35s ease-in-out;
+}
 .about-container .about .box {
   width: 100%;
   padding: 2rem;
@@ -241,7 +244,6 @@ h6 {
   width: 50%;
   min-width: 9rem;
   max-width: 12rem;
-  animation: grow 0.35s ease-in-out forwards;
 }
 .about-container .about .box p {
   font-size: 1.6rem;
