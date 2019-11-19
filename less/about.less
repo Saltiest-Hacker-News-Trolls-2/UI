@@ -25,6 +25,7 @@
 
     p {
       font-size: 1.6rem;
+      font-weight: bold;
     }
 
     h2 {
@@ -33,6 +34,20 @@
 
     h3 {
       margin-bottom: 2.5rem;
+    }
+
+    a {
+      .flex(column, center, center);
+      text-decoration: none;
+      color: @color-black;
+    }
+
+    a:hover {
+      color: @color-white;
+
+      img {
+        filter: invert(100%);
+      }
     }
   }
 

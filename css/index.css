@@ -163,12 +163,27 @@ h6 {
 }
 .about .box p {
   font-size: 1.6rem;
+  font-weight: bold;
 }
 .about .box h2 {
   font-size: 6rem;
 }
 .about .box h3 {
   margin-bottom: 2.5rem;
+}
+.about .box a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+.about .box a:hover {
+  color: #fff;
+}
+.about .box a:hover img {
+  filter: invert(100%);
 }
 .about .span1 {
   grid-column: span 1;
