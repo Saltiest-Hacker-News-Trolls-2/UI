@@ -1,6 +1,7 @@
 .home {
   height: calc(100vh - @nav-height);
   .flex(column, center, center);
+  animation: slideInFromBottom .5s ease-in-out forwards;
 
   .container {
     max-width: 80vw;
@@ -14,6 +15,7 @@
 
       .content {
         .flex(column, center, center);
+        animation: growAndSkew .6s ease-out forwards;
         transform: skewX(10deg);
 
         *:not(:last-child) {

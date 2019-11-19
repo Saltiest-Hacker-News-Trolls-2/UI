@@ -20,7 +20,7 @@
   }
 }
 
-@keyframes slideIn {
+@keyframes slideInNav {
   from {
     transform: translateY(-@nav-height);
   }
@@ -37,5 +37,25 @@
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100vh);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0) skewX(10deg);
+  }
+
+  to {
+    transform: scale(1) skewX(10deg);
   }
 }
