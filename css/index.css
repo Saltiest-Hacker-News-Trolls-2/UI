@@ -138,45 +138,59 @@ h6 {
   top: 0;
   background-image: linear-gradient(to bottom right, rgba(193, 193, 193, 0.6), rgba(0, 0, 0, 0.4));
 }
-.about {
+.container {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .about {
   display: grid;
+  max-width: 67%;
   padding: 2rem 2rem;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(6, auto);
   grid-gap: 2rem;
-  background: #000;
+  transition: 0.2s ease-out max-width;
 }
-.about #team-svg {
-  margin-top: 25px;
+.container .about #team-svg {
+  margin-top: 10%;
   width: 50%;
   max-width: 15rem;
 }
-.about .blue {
+.container .about .blue {
   background-image: linear-gradient(to bottom right, #00d9ff, #0098b3);
 }
-.about .grey {
+.container .about .grey {
   background-image: linear-gradient(to bottom right, #c1c1c1, #5a5a5a);
 }
-.about .box {
+.container .about .max-height-sm {
+  max-height: 10rem;
+}
+.container .about .max-height-lg {
+  max-height: 20rem;
+}
+.container .about .box {
   width: 100%;
   padding: 2rem;
 }
-.about .box img {
-  width: 25%;
-  min-width: 7rem;
-  max-width: 10rem;
+.container .about .box img {
+  width: 50%;
+  min-width: 9rem;
+  max-width: 12rem;
 }
-.about .box p {
+.container .about .box p {
   font-size: 1.6rem;
   font-weight: bold;
 }
-.about .box h2 {
+.container .about .box h2 {
   font-size: 6rem;
 }
-.about .box h3 {
+.container .about .box h3 {
   margin-bottom: 2.5rem;
 }
-.about .box a {
+.container .about .box a {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,42 +198,54 @@ h6 {
   text-decoration: none;
   color: #000;
 }
-.about .box a:hover {
+.container .about .box a:hover {
   color: #fff;
 }
-.about .box a:hover img {
+.container .about .box a:hover img {
   filter: invert(100%);
 }
-.about .span1 {
+.container .about .span1 {
   grid-column: span 1;
 }
-.about .span2 {
+.container .about .span2 {
   grid-column: span 2;
 }
-.about .span3 {
+.container .about .span3 {
   grid-column: span 3;
 }
-.about .center {
+.container .about .center {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.about .center-col {
+.container .about .center-col {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 800px) {
-  .about {
-    grid-auto-flow: row dense;
+@media (max-width: 1306px) {
+  .container .about {
+    max-width: 80%;
   }
-  .about .span1 {
+}
+@media (max-width: 1100px) {
+  .container .about {
+    max-width: 90%;
+  }
+}
+@media (max-width: 975px) {
+  .container .about .span1 {
     grid-column: span 3;
   }
-  .about .span2 {
+  .container .about .span2 {
     grid-column: span 3;
+  }
+}
+@media (max-width: 575px) {
+  .container .about {
+    max-width: 100%;
   }
 }
 .home {
