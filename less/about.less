@@ -11,10 +11,20 @@
     grid-gap: 2rem;
     transition: 0.2s ease-out max-width;
 
-    #team-svg {
+    .solo-img {
       margin-top: 10%;
       width: 50%;
       max-width: 15rem;
+    }
+
+    #shaker {
+        transform: scaleX(-1);
+        transition: .2s ease-in all;
+        
+        &:hover {
+            filter: invert(100%);
+            animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+        }
     }
 
     .blue {
@@ -25,6 +35,14 @@
       );
     }
 
+    .orange {
+      background-image: linear-gradient(
+        to bottom right,
+        @color-hn,
+        darken(@color-hn, 15%)
+      );
+    }
+
     .grey {
       background-image: linear-gradient(
         to bottom right,
@@ -32,12 +50,13 @@
         @color-nearblack
       );
 
-      h1, h2 {
+      h1,
+      h2 {
         color: @color-white;
       }
 
       img {
-          filter: invert(100%);
+        filter: invert(100%);
       }
     }
 
@@ -76,7 +95,7 @@
         .flex(column, center, center);
         text-decoration: none;
         color: @color-black;
-        transition: .2s ease-in-out all;
+        transition: 0.2s ease-in-out all;
       }
 
       a:hover {

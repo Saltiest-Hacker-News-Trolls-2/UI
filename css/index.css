@@ -154,13 +154,24 @@ h6 {
   grid-gap: 2rem;
   transition: 0.2s ease-out max-width;
 }
-.about-container .about #team-svg {
+.about-container .about .solo-img {
   margin-top: 10%;
   width: 50%;
   max-width: 15rem;
 }
+.about-container .about #shaker {
+  transform: scaleX(-1);
+  transition: 0.2s ease-in all;
+}
+.about-container .about #shaker:hover {
+  filter: invert(100%);
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
 .about-container .about .blue {
   background-image: linear-gradient(to bottom right, #00d9ff, #0098b3);
+}
+.about-container .about .orange {
+  background-image: linear-gradient(to bottom right, #f3470d, #ab3108);
 }
 .about-container .about .grey {
   background-image: linear-gradient(to bottom right, #5a5a5a, #292929);
@@ -324,6 +335,7 @@ h6 {
   height: 5rem;
   transform: scaleX(-1);
   margin: 0.75rem 0 0 0.5rem;
+  transition: 0.2s ease-in-out all;
 }
 .header nav .logo svg:hover {
   fill: #fff;
