@@ -1,0 +1,91 @@
+.header {
+  .flex(row, space-between, center);
+  background-color: @color-hn;
+  padding: 0 4rem;
+  .shadow(0, 5px, 5px);
+  height: @nav-height;
+  animation: slideIn .5s ease-out forwards;
+
+  nav {
+    .flex(row, space-between, center);
+    width: 100%;
+
+    .logo {
+      .flex(row, center, center);
+
+      svg {
+        width: 5rem;
+        height: 5rem;
+        transform: scaleX(-1);
+        margin: 0.75rem 0 0 0.5rem;
+
+        &:hover {
+          fill: @color-white;
+          animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+        }
+      }
+
+      h1 {
+        display: inline;
+        color: @color-white;
+        font-size: 3rem;
+
+        &:hover {
+          color: @color-nearblack;
+        }
+      }
+    }
+
+    .nav-links {
+      .nav-link {
+        display: inline-block;
+        color: @color-nearblack;
+        font-size: 2rem;
+
+        &:hover {
+          color: @color-offwhite;
+        }
+
+        &:not(:last-child) {
+          margin-right: 4rem;
+        }
+
+        div {
+          height: @nav-height;
+          padding: 0 1rem;
+          .flex(row, center, center);
+
+          &:hover {
+            background-color: @color-nearblack;
+          }
+        }
+      }
+    }
+  }
+
+  @media @phone {
+    padding: 0 1rem;
+
+    nav .logo {
+      h1 {
+        display: none;
+      }
+
+      svg {
+        fill: @color-white;
+
+        &:hover {
+          fill: @color-black;
+        }
+      }
+    }
+
+    nav .nav-links {
+      .nav-link {
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}

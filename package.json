@@ -1,0 +1,23 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "description": "[Product Canvas](https://docs.google.com/document/d/19Azytbftor68XZLK5dcufcPH7mBliFLlNGaShqvltK0/edit?usp=sharing)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saltiest-Hacker-News-Trolls-2/UI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saltiest-Hacker-News-Trolls-2/UI/issues"
+  },
+  "homepage": "https://github.com/Saltiest-Hacker-News-Trolls-2/UI#readme",
+  "devDependencies": {
+    "less-watch-compiler": "^1.14.1",
+    "lessc": "^1.0.2"
+  }
+}
