@@ -1,11 +1,11 @@
 .background {
-    height: 100vh;
-    width: 100%;
-    background-color: lighten(@color-black, 5%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+  height: 100vh;
+  width: 100%;
+  background-color: lighten(@color-black, 5%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .about-container {
@@ -43,6 +43,21 @@
         @color-complement,
         darken(@color-complement, 15%)
       );
+      transition: 0.2s ease-out transform;
+
+      &:hover {
+        background-image: linear-gradient(
+          to bottom right,
+          darken(@color-complement, 10%),
+          darken(@color-complement, 25%)
+        );
+        transform: translateY(-4px);
+
+        & img {
+          transition: 0.2s ease-out all;
+          transform: scale(1.1);
+        }
+      }
     }
 
     .orange {
