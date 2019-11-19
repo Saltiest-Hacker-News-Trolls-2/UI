@@ -148,15 +148,18 @@ h6 {
 }
 .about #team-svg {
   margin-top: 25px;
+  width: 50%;
+  max-width: 15rem;
 }
 .about .box {
   background-color: #00d9ff;
   width: 100%;
-  height: auto;
   padding: 2rem;
 }
 .about .box img {
-  width: 10rem;
+  width: 25%;
+  min-width: 7rem;
+  max-width: 10rem;
 }
 .about .box p {
   font-size: 1.6rem;
@@ -187,6 +190,17 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .about {
+    grid-auto-flow: row dense;
+  }
+  .about .span1 {
+    grid-column: span 3;
+  }
+  .about .span2 {
+    grid-column: span 3;
+  }
 }
 .home {
   height: calc(100vh - 5rem);
