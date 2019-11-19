@@ -151,8 +151,13 @@ h6 {
   width: 50%;
   max-width: 15rem;
 }
+.about .blue {
+  background-image: linear-gradient(to bottom right, #00d9ff, #0098b3);
+}
+.about .grey {
+  background-image: linear-gradient(to bottom right, #c1c1c1, #5a5a5a);
+}
 .about .box {
-  background-color: #00d9ff;
   width: 100%;
   padding: 2rem;
 }

@@ -12,8 +12,23 @@
     max-width: 15rem;
   }
 
+  .blue {
+    background-image: linear-gradient(
+      to bottom right,
+      @color-complement,
+      darken(@color-complement, 15%)
+    );
+  }
+
+  .grey {
+    background-image: linear-gradient(
+      to bottom right,
+      @color-lightgrey,
+      @color-darkgrey
+    );
+  }
+
   .box {
-    background-color: @color-complement;
     width: 100%;
     padding: 2rem;
 
