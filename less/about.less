@@ -1,0 +1,55 @@
+.about {
+  display: grid;
+  padding: 2rem 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 2rem;
+  background: @color-black;
+
+  #team-svg {
+      margin-top: 25px;
+  }
+
+  .box {
+    background-color: @color-complement;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+
+    img {
+        width: 10rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 6rem;
+    }
+
+    h3 {
+        margin-bottom: 2.5rem;
+    }
+  }
+
+  .span1 {
+    grid-column: span 1;
+  }
+
+  .span2 {
+    grid-column: span 2;
+  }
+
+  .span3 {
+    grid-column: span 3;
+  }
+
+  .center {
+    .flex(row, center, center);
+  }
+
+  .center-col {
+      .flex(column, center, center);
+  }
+}

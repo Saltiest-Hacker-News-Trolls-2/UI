@@ -138,6 +138,56 @@ h6 {
   top: 0;
   background-image: linear-gradient(to bottom right, rgba(193, 193, 193, 0.6), rgba(0, 0, 0, 0.4));
 }
+.about {
+  display: grid;
+  padding: 2rem 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 2rem;
+  background: #000;
+}
+.about #team-svg {
+  margin-top: 25px;
+}
+.about .box {
+  background-color: #00d9ff;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+}
+.about .box img {
+  width: 10rem;
+}
+.about .box p {
+  font-size: 1.6rem;
+}
+.about .box h2 {
+  font-size: 6rem;
+}
+.about .box h3 {
+  margin-bottom: 2.5rem;
+}
+.about .span1 {
+  grid-column: span 1;
+}
+.about .span2 {
+  grid-column: span 2;
+}
+.about .span3 {
+  grid-column: span 3;
+}
+.about .center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.about .center-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .home {
   height: calc(100vh - 5rem);
   display: flex;
