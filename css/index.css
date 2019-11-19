@@ -197,9 +197,11 @@ h6 {
   align-items: center;
   text-decoration: none;
   color: #000;
+  transition: 0.2s ease-in-out all;
 }
 .container .about .box a:hover {
   color: #fff;
+  transform: translateY(-3px);
 }
 .container .about .box a:hover img {
   filter: invert(100%);
