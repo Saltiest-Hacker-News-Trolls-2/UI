@@ -6,10 +6,10 @@
     animation: slideInFromBottom 0.5s ease-in-out forwards;
 
     .container {
-      max-width: 80vw;
+      max-width: 67vw;
 
       .hero {
-        background-color: rgba(@color-offwhite, 0.5);
+        background-color: rgba(@color-nearblack, 0.85);
         padding: 5rem;
         text-align: center;
         .shadow(0px, 2px, 5px);
@@ -19,14 +19,19 @@
           animation: grow, fadeIn 2s ease-out;
 
           *:not(:last-child) {
-            margin-bottom: 2rem;
+            margin-bottom: 4rem;
+          }
+
+          h1 {
+            color: @color-offwhite;
           }
 
           h2 {
             font-size: 2rem;
             font-family: "IBM Plex Mono", monospace;
             max-width: 67%;
-            background-color: @color-lightgrey;
+            background-color: lighten(@color-nearblack, 10%);
+            color: @color-offwhite;
             padding: 2rem;
             .shadow(0px, 2px, 5px);
           }

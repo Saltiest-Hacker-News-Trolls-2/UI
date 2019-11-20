@@ -113,7 +113,7 @@ h6 {
   background-color: #f3470d;
   padding: 1rem 2rem;
   border-radius: 5px;
-  color: #292929;
+  color: #252729;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   font-family: "Ubuntu", sans-serif;
   transition: 0.1s ease-out all;
@@ -161,7 +161,7 @@ h6 {
   height: 100vh;
   width: 100%;
   top: 0;
-  background-image: linear-gradient(to bottom right, rgba(193, 193, 193, 0.6), rgba(0, 0, 0, 0.4));
+  background-image: linear-gradient(to bottom right, rgba(193, 193, 193, 0.8), rgba(0, 0, 0, 0.6));
 }
 .background {
   height: 100vh;
@@ -221,7 +221,7 @@ h6 {
   background-image: linear-gradient(to bottom right, #f3470d, #ab3108);
 }
 .about-container .about .grey {
-  background-image: linear-gradient(to bottom right, #5a5a5a, #292929);
+  background-image: linear-gradient(to bottom right, #5a5a5a, #252729);
 }
 .about-container .about .grey h1,
 .about-container .about .grey h2 {
@@ -330,10 +330,10 @@ h6 {
   animation: slideInFromBottom 0.5s ease-in-out forwards;
 }
 .home-container .home .container {
-  max-width: 80vw;
+  max-width: 67vw;
 }
 .home-container .home .container .hero {
-  background-color: rgba(227, 227, 227, 0.5);
+  background-color: rgba(37, 39, 41, 0.85);
   padding: 5rem;
   text-align: center;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
@@ -346,13 +346,17 @@ h6 {
   animation: grow, fadeIn 2s ease-out;
 }
 .home-container .home .container .hero .content *:not(:last-child) {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+.home-container .home .container .hero .content h1 {
+  color: #e3e3e3;
 }
 .home-container .home .container .hero .content h2 {
   font-size: 2rem;
   font-family: "IBM Plex Mono", monospace;
   max-width: 67%;
-  background-color: #c1c1c1;
+  background-color: #3d4144;
+  color: #e3e3e3;
   padding: 2rem;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -427,11 +431,11 @@ h6 {
   font-size: 3rem;
 }
 .header nav .logo h1:hover {
-  color: #292929;
+  color: #252729;
 }
 .header nav .nav-links .nav-link {
   display: inline-block;
-  color: #292929;
+  color: #252729;
   font-size: 2rem;
   font-family: "Ubuntu", sans-serif;
 }
@@ -450,7 +454,7 @@ h6 {
   align-items: center;
 }
 .header nav .nav-links .nav-link div:hover {
-  background-color: #292929;
+  background-color: #252729;
 }
 @media (max-width: 575px) {
   .header {
