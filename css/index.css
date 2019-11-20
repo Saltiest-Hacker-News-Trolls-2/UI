@@ -564,9 +564,6 @@ h6 {
   .header {
     padding: 0 1rem;
   }
-  .header nav .logo h1 {
-    display: none;
-  }
   .header nav .logo svg {
     fill: #fff;
   }
