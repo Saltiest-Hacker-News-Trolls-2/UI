@@ -153,6 +153,7 @@ h6 {
   height: 100%;
 }
 .p5 #p5-container canvas {
+  position: fixed;
   width: 100%;
   height: auto;
 }
