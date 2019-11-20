@@ -14,10 +14,10 @@
         padding: 5rem;
         text-align: center;
         .shadow(0px, 2px, 5px);
-        
+
         .content {
           .flex(column, center, center);
-          animation: growAndSkew,fadeIn 2s ease-out;
+          animation: growAndSkew, fadeIn 2s ease-out;
           transform: skewX(10deg);
 
           *:not(:last-child) {
@@ -36,7 +36,7 @@
       }
     }
 
-    @media @phone {
+    @media @desktop-sm {
       .container {
         max-width: 90vw;
 
@@ -45,6 +45,46 @@
 
           .content {
             transform: inherit;
+
+            h2 {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    @media @phone {
+      .container {
+        .hero {
+          padding: 2rem;
+
+          .content {
+            h1 {
+              font-size: 4rem;
+            }
+
+            h2 {
+              font-size: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+
+    @media @phone-sm {
+      .container {
+        .hero {
+          padding: 2rem;
+
+          .content {
+            h1 {
+              font-size: 3rem;
+            }
+
+            h2 {
+              font-size: 1.4rem;
+            }
           }
         }
       }
