@@ -221,11 +221,11 @@ h6 {
   font-size: 4rem;
   color: #e3e3e3;
   text-decoration: none;
-  padding: 4rem 25vw;
+  padding: 2rem 25vw;
   background-color: #252729;
 }
 .mobile-nav nav a:not(:last-of-type) {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .mobile-nav nav a:hover {
   background-color: #949494;
