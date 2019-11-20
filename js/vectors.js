@@ -13,6 +13,7 @@ function setup() {
 }
 
 function draw() {
+  rectMode(CORNER);
   fill(0, 20);
   rect(0, 0, width, height);
   runBoids();
@@ -92,12 +93,10 @@ class Boid {
           other.position.x,
           other.position.y
           );
-          push();
           noStroke();
           rectMode(CENTER);
           fill(243, 71, 13);
           rect(this.position.x, this.position.y, map(width, 300, 1920, 3, 5), map(width, 300, 1920, 3, 5));
-          pop();
       }
     }
   }
