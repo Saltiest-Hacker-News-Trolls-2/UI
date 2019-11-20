@@ -9,7 +9,6 @@
       max-width: 80vw;
 
       .hero {
-        transform: skewX(-10deg);
         background-color: rgba(@color-offwhite, 0.5);
         padding: 5rem;
         text-align: center;
@@ -17,8 +16,7 @@
 
         .content {
           .flex(column, center, center);
-          animation: growAndSkew, fadeIn 2s ease-out;
-          transform: skewX(10deg);
+          animation: grow, fadeIn 2s ease-out;
 
           *:not(:last-child) {
             margin-bottom: 2rem;
@@ -41,11 +39,7 @@
         max-width: 90vw;
 
         .hero {
-          transform: skewX(0deg);
-
           .content {
-            transform: inherit;
-
             h2 {
               max-width: 100%;
             }
