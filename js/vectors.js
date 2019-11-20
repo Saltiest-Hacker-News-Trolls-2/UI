@@ -12,6 +12,7 @@ function setup() {
 }
 
 function draw() {
+  fill(0, 20);
   rect(0, 0, width, height);
   runBoids();
 
@@ -51,7 +52,7 @@ class Boid {
     this.velocity.setMag(random(0.01, 5));
     this.acceleration = createVector();
     this.maxSpeed = 10;
-    this.perception = random(25, width / 4);
+    this.perception = width > 1000 ? random(25, width / 8) : random(25, width/4);
     this.thickness = random(this.radius * 0.15, this.radius * 0.5);
     this.getsBrighter = true;
     this.getsBigger = true;
