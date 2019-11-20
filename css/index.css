@@ -40,14 +40,6 @@
     transform: translateY(0);
   }
 }
-@keyframes growAndSkew {
-  from {
-    transform: scale(0) skewX(10deg);
-  }
-  to {
-    transform: scale(1) skewX(10deg);
-  }
-}
 @keyframes grow {
   from {
     transform: scale(0);
@@ -341,7 +333,7 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: growAndSkew 0.6s ease-out forwards;
+  animation: grow 0.6s ease-out;
   transform: skewX(10deg);
 }
 .home-container .home .container .hero .content *:not(:last-child) {
