@@ -47,12 +47,12 @@ class Boid {
   constructor() {
     this.position = createVector(random(width), random(height));
     this.radius = random(3, 6);
-    this.brightness = random(0, 255);
+    this.brightness = random(100, 200);
     this.velocity = p5.Vector.random2D();
     this.velocity.setMag(random(0.01, 5));
     this.acceleration = createVector();
     this.maxSpeed = 10;
-    this.perception = width > 1000 ? random(25, width / 8) : random(25, width/4);
+    this.perception = width > 1000 ? random(25, width / 6) : random(25, width/4);
     this.thickness = random(this.radius * 0.15, this.radius * 0.5);
     this.getsBrighter = true;
     this.getsBigger = true;
