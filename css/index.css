@@ -194,10 +194,15 @@ h6 {
   font-size: 4rem;
   color: #e3e3e3;
   text-decoration: none;
-  padding: 4rem;
+  padding: 4rem 25vw;
+  background-color: #252729;
+}
+.mobile-nav nav a:not(:last-of-type) {
+  margin-bottom: 2rem;
 }
 .mobile-nav nav a:hover {
-  color: #252729;
+  background-color: #949494;
+  color: #f3470d;
 }
 .mobile-nav--slide {
   transform: translateX(-100vw);

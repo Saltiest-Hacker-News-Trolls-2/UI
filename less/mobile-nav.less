@@ -5,7 +5,7 @@
   top: 0;
   left: 100vw;
   z-index: 1;
-  transition: .2s ease-in-out all;
+  transition: 0.2s ease-in-out all;
 
   display: flex;
   flex-direction: column;
@@ -18,10 +18,16 @@
     font-size: 4rem;
     color: @color-offwhite;
     text-decoration: none;
-    padding: 4rem;
+    padding: 4rem 25vw;
+    background-color: @color-nearblack;
+
+    &:not(:last-of-type) {
+      margin-bottom: 2rem;
+    }
 
     &:hover {
-      color: @color-nearblack;
+      background-color: @color-midgrey;
+      color: @color-hn;
     }
   }
 
