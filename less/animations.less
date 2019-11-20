@@ -62,10 +62,20 @@
 
 @keyframes slideMobileNav {
   from {
+    transform: translateX(-100vw);
+  }
+
+  to {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes slideMobileNavOut {
+  from {
     transform: translateX(100vw);
   }
 
-  from {
-    transform: translateX(0);
+  to {
+    transform: translateX(-100vw);
   }
 }

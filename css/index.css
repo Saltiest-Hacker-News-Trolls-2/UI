@@ -50,10 +50,18 @@
 }
 @keyframes slideMobileNav {
   from {
+    transform: translateX(-100vw);
+  }
+  to {
     transform: translateX(100vw);
   }
+}
+@keyframes slideMobileNavOut {
   from {
-    transform: translateX(0);
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(-100vw);
   }
 }
 *,
@@ -179,7 +187,6 @@ h6 {
   top: 0;
   left: 100vw;
   z-index: 1;
-  transition: 0.2s ease-in-out all;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -205,7 +212,10 @@ h6 {
   color: #f3470d;
 }
 .mobile-nav--slide {
-  transform: translateX(-100vw);
+  animation: slideMobileNav 0.2s ease-in-out forwards;
+}
+.mobile-nav--slide-out {
+  animation: slideMobileNavOut 0.2s ease-out forwards;
 }
 .background {
   height: 100vh;
