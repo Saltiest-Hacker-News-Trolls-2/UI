@@ -479,6 +479,48 @@ h6 {
 .header nav .logo h1:hover {
   color: #252729;
 }
+.header nav .hamburger {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+.header nav .hamburger-icon {
+  width: 3rem;
+  height: 0.4rem;
+  background: #e3e3e3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-out all;
+}
+.header nav .hamburger-icon::before,
+.header nav .hamburger-icon::after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 0.4rem;
+  background: #e3e3e3;
+  transition: 0.5s ease-out all;
+}
+.header nav .hamburger-icon::before {
+  top: -1rem;
+}
+.header nav .hamburger-icon::after {
+  top: 1rem;
+}
+.header nav .hamburger-pressed .hamburger-icon {
+  background: rgba(0, 0, 0, 0);
+}
+.header nav .hamburger-pressed .hamburger-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.header nav .hamburger-pressed .hamburger-icon::after {
+  top: 0;
+  transform: rotate(135deg);
+}
 .header nav .nav-links .nav-link {
   display: inline-block;
   color: #252729;
@@ -501,6 +543,11 @@ h6 {
 }
 .header nav .nav-links .nav-link div:hover {
   background-color: #252729;
+}
+@media (max-width: 800px) {
+  .header nav .nav-links {
+    display: none;
+  }
 }
 @media (max-width: 575px) {
   .header {

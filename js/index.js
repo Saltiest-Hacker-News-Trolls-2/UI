@@ -1,6 +1,8 @@
 const mobileNav = document.querySelector(".mobile-nav");
-const anywhere = document.getElementsByTagName("body")[0];
+const hamburger = document.querySelector(".hamburger");
+const hamburgerIcon = document.querySelector(".hamburger-icon");
 
-anywhere.addEventListener("click", () => {
-    mobileNav.classList.toggle("mobile-nav--slide");
-})
+hamburger.addEventListener("click", function() {
+  mobileNav.classList.toggle("mobile-nav--slide");
+  hamburger.classList.toggle("hamburger-pressed");
+});
