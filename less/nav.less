@@ -1,10 +1,12 @@
 .header {
+  position: relative;
   .flex(row, space-between, center);
   background-color: @color-hn;
   padding: 0 4rem;
   .shadow(0, 5px, 5px);
   height: @nav-height;
   animation: slideInNav .5s ease-out forwards;
+  z-index: 3;
 
   nav {
     .flex(row, space-between, center);
