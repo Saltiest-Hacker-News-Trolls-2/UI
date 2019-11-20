@@ -1,37 +1,42 @@
-.home {
-  height: calc(100vh - @nav-height);
-  .flex(column, center, center);
+.home-container {
+  overflow-y: hidden;
+  .home {
+    height: calc(100vh - @nav-height);
+    .flex(column, center, center);
+    animation: slideInFromBottom 0.5s ease-in-out forwards;
 
-  .container {
-    max-width: 80vw;
+    .container {
+      max-width: 80vw;
 
-    .hero {
-      transform: skewX(-10deg);
-      background-color: rgba(@color-offwhite, 0.5);
-      padding: 5rem;
-      text-align: center;
-      .shadow(0px, 2px, 5px);
+      .hero {
+        transform: skewX(-10deg);
+        background-color: rgba(@color-offwhite, 0.5);
+        padding: 5rem;
+        text-align: center;
+        .shadow(0px, 2px, 5px);
+        
+        .content {
+          .flex(column, center, center);
+          animation: growAndSkew,fadeIn 2s ease-out;
+          transform: skewX(10deg);
 
-      .content {
-        .flex(column, center, center);
-        transform: skewX(10deg);
-
-        *:not(:last-child) {
-          margin-bottom: 2rem;
+          *:not(:last-child) {
+            margin-bottom: 2rem;
+          }
         }
       }
     }
-  }
 
-  @media @phone {
-    .container {
-      max-width: 90vw;
+    @media @phone {
+      .container {
+        max-width: 90vw;
 
-      .hero {
-        transform: skewX(0deg);
+        .hero {
+          transform: skewX(0deg);
 
-        .content {
-          transform: inherit;
+          .content {
+            transform: inherit;
+          }
         }
       }
     }

@@ -8,6 +8,7 @@ function setup() {
   h = canvasDiv.offsetHeight;
   cnv = createCanvas(w, h);
   cnv.parent("p5-container");
+  pixelDensity(1);
 }
 
 function draw() {
