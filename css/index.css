@@ -126,11 +126,19 @@ h6 {
   font-family: "Ubuntu", sans-serif;
   transition: 0.1s ease-out all;
 }
+.btn span {
+  display: inline-block;
+  transition: 0.2s ease-in-out all;
+}
 .btn:hover {
   color: #fff;
   background-color: #00aecc;
   transform: translateY(-2px);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.btn:hover span {
+  transform: scale(1.2) rotate(90deg);
+  margin-left: 1rem;
 }
 .btn:active {
   color: #000;
@@ -188,6 +196,9 @@ h6 {
   grid-template-rows: repeat(6, auto);
   grid-gap: 2rem;
   transition: 0.2s ease-out max-width;
+}
+.about-container .about .paragraph:not(:last-of-type) {
+  margin-bottom: 1rem;
 }
 .about-container .about .solo-img {
   margin-top: 10%;
@@ -346,6 +357,14 @@ h6 {
 }
 .home-container .home .container .hero .content *:not(:last-child) {
   margin-bottom: 2rem;
+}
+.home-container .home .container .hero .content h2 {
+  font-size: 2rem;
+  font-family: "IBM Plex Mono", monospace;
+  max-width: 67%;
+  background-color: #c1c1c1;
+  padding: 2rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 575px) {
   .home-container .home .container {
