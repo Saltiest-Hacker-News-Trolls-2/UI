@@ -51,7 +51,7 @@ class Boid {
     this.velocity = p5.Vector.random2D();
     this.velocity.setMag(random(0.01, 5));
     this.acceleration = createVector();
-    this.maxSpeed = 10;
+    this.maxSpeed =  map(width, 300, 1920, 1, 10);
     this.perception = width > 1000 ? random(25, width / 6) : random(25, width/4);
     this.thickness = random(this.radius * 0.15, this.radius * 0.5);
     this.getsBrighter = true;
