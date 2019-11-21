@@ -63,6 +63,12 @@
           transform: scale(1.1);
         }
       }
+
+      &:last-of-type {
+        img {
+          margin-bottom: 2rem;
+        }
+      }
     }
 
     .orange {
@@ -94,8 +100,8 @@
       max-height: 10rem;
     }
 
-    .max-height-lg {
-      max-height: 20rem;
+    .center-text {
+      text-align: center;
     }
 
     .grow-icon {
@@ -172,7 +178,7 @@
       max-width: 90%;
     }
 
-    @media (max-width: 975px) {
+    @media @tablet-lg {
       .span1 {
         grid-column: span 3;
       }

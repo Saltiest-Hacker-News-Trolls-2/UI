@@ -300,6 +300,9 @@ h6 {
   transition: 0.2s ease-out all;
   transform: scale(1.1);
 }
+.about-container .about .blue:last-of-type img {
+  margin-bottom: 2rem;
+}
 .about-container .about .orange {
   background-image: linear-gradient(to bottom right, #f3470d, #ab3108);
 }
@@ -316,8 +319,8 @@ h6 {
 .about-container .about .max-height-sm {
   max-height: 10rem;
 }
-.about-container .about .max-height-lg {
-  max-height: 20rem;
+.about-container .about .center-text {
+  text-align: center;
 }
 .about-container .about .grow-icon img {
   animation: grow 0.35s ease-in-out;
@@ -388,7 +391,7 @@ h6 {
     max-width: 90%;
   }
 }
-@media (max-width: 975px) {
+@media (max-width: 800px) {
   .about-container .about .span1 {
     grid-column: span 3;
   }
