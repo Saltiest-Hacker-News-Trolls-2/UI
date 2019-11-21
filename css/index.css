@@ -254,6 +254,15 @@ h6 {
     margin-bottom: 3rem;
   }
 }
+@media (orientation: landscape) {
+  .mobile-nav nav a {
+    font-size: 5vh;
+    padding: 2vh 25vw;
+  }
+  .mobile-nav nav a:not(:last-of-type) {
+    margin-bottom: 5vh;
+  }
+}
 .background {
   height: 100vh;
   width: 100%;
