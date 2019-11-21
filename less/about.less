@@ -53,14 +53,18 @@
       &:hover {
         background-image: linear-gradient(
           to bottom right,
-          darken(@color-complement, 10%),
-          darken(@color-complement, 25%)
+          darken(@color-complement, 5%),
+          darken(@color-complement, 20%)
         );
         transform: translateY(-4px);
 
         & img {
           transition: 0.2s ease-out all;
           transform: scale(1.1);
+        }
+
+        & p {
+          color: @color-offwhite;
         }
       }
 
