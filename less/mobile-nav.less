@@ -32,10 +32,21 @@
 
   &--slide {
     // transform: translateX(-100vw);
-    animation: slideMobileNav .2s ease-in-out forwards;
+    animation: slideMobileNav 0.2s ease-in-out forwards;
   }
 
   &--slide-out {
-      animation: slideMobileNavOut .2s ease-out forwards;
+    animation: slideMobileNavOut 0.2s ease-out forwards;
+  }
+
+  @media @phone-sm {
+    nav a {
+      font-size: 3rem;
+      padding: 1rem 25vw;
+
+      &:not(:last-of-type) {
+        margin-bottom: 3rem;
+      }
+    }
   }
 }

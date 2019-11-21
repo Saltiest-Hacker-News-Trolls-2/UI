@@ -237,6 +237,15 @@ h6 {
 .mobile-nav--slide-out {
   animation: slideMobileNavOut 0.2s ease-out forwards;
 }
+@media (max-width: 400px) {
+  .mobile-nav nav a {
+    font-size: 3rem;
+    padding: 1rem 25vw;
+  }
+  .mobile-nav nav a:not(:last-of-type) {
+    margin-bottom: 3rem;
+  }
+}
 .background {
   height: 100vh;
   width: 100%;
