@@ -551,15 +551,15 @@ h6 {
   justify-content: center;
   align-items: center;
 }
-.header nav .logo svg {
+.header nav .logo img {
   width: 5rem;
   height: 5rem;
   transform: scaleX(-1);
   margin: 0.75rem 0 0 0.5rem;
   transition: 0.2s ease-in-out all;
 }
-.header nav .logo svg:hover {
-  fill: #fff;
+.header nav .logo img:hover {
+  filter: invert(100%);
   animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 .header nav .logo h1 {
