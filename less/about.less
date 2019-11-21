@@ -53,14 +53,24 @@
       &:hover {
         background-image: linear-gradient(
           to bottom right,
-          darken(@color-complement, 10%),
-          darken(@color-complement, 25%)
+          darken(@color-complement, 5%),
+          darken(@color-complement, 20%)
         );
         transform: translateY(-4px);
 
         & img {
           transition: 0.2s ease-out all;
           transform: scale(1.1);
+        }
+
+        & p {
+          color: @color-offwhite;
+        }
+      }
+
+      &:last-of-type {
+        img {
+          margin-bottom: 2rem;
         }
       }
     }
@@ -94,8 +104,8 @@
       max-height: 10rem;
     }
 
-    .max-height-lg {
-      max-height: 20rem;
+    .center-text {
+      text-align: center;
     }
 
     .grow-icon {
@@ -172,7 +182,7 @@
       max-width: 90%;
     }
 
-    @media (max-width: 975px) {
+    @media @tablet-lg {
       .span1 {
         grid-column: span 3;
       }
