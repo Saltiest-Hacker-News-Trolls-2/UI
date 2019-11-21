@@ -40,6 +40,14 @@
     transform: translateY(0);
   }
 }
+@keyframes setOverflowY {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow-y: visible;
+  }
+}
 @keyframes grow {
   from {
     transform: scale(0);
@@ -194,7 +202,7 @@ h6 {
   height: auto;
 }
 .p5 .gradient {
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100%;
   top: 0;
@@ -405,7 +413,7 @@ h6 {
   }
 }
 .home-container {
-  overflow-y: hidden;
+  animation: setOverflowY 0.5s forwards;
 }
 .home-container .home {
   height: calc(100vh - 5rem);
