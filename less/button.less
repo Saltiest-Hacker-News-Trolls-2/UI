@@ -6,14 +6,24 @@
   border-radius: @border-radius;
   color: @color-nearblack;
   .shadow(0px, 2px, 4px);
-  transition: 0.1s ease-out all;
   font-family: "Ubuntu", sans-serif;
+  transition: 0.1s ease-out all;
+
+  span {
+    display: inline-block;
+    transition: .2s ease-in-out all;
+  }
 
   &:hover {
     color: @color-white;
     background-color: darken(@color-complement, 10%);
     transform: translateY(-2px);
     .shadow(0px, 4px, 10px);
+
+    & span {
+      transform: scale(1.2) rotate(90deg);
+      margin-left: 1rem;
+    }
   }
 
   &:active {

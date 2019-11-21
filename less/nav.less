@@ -1,10 +1,12 @@
 .header {
+  position: relative;
   .flex(row, space-between, center);
   background-color: @color-hn;
   padding: 0 4rem;
   .shadow(0, 5px, 5px);
   height: @nav-height;
-  animation: slideInNav .5s ease-out forwards;
+  animation: slideInNav 0.5s ease-out forwards;
+  z-index: 3;
 
   nav {
     .flex(row, space-between, center);
@@ -18,11 +20,11 @@
         height: 5rem;
         transform: scaleX(-1);
         margin: 0.75rem 0 0 0.5rem;
-        transition: .2s ease-in-out all;
+        transition: 0.2s ease-in-out all;
 
         &:hover {
           fill: @color-white;
-          animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+          animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
         }
       }
 
@@ -33,6 +35,54 @@
 
         &:hover {
           color: @color-nearblack;
+        }
+      }
+    }
+
+    .hamburger {
+      position: relative;
+      display: none;
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+
+      &-icon {
+        width: 3rem;
+        height: 0.4rem;
+        background: @color-offwhite;
+        transition: 0.5s ease-out all;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+
+          width: 3rem;
+          height: 0.4rem;
+          background: @color-offwhite;
+          transition: 0.5s ease-out all;
+        }
+
+        &::before {
+          transform: translate3d(0, -1rem, 0);
+        }
+
+        &::after {
+          transform: translate3d(0, 1rem, 0);
+        }
+      }
+
+      &-pressed {
+        .hamburger-icon {
+          background: rgba(0, 0, 0, 0);
+        }
+
+        .hamburger-icon::before {
+          transform: rotate(45deg) translate3d(0, 0, 0);
+        }
+
+        .hamburger-icon::after {
+          transform: rotate(135deg) translate3d(0, 0, 0);
         }
       }
     }
@@ -65,14 +115,22 @@
     }
   }
 
+  @media @tablet-lg {
+    nav {
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        .flex(column, center, center);
+      }
+    }
+  }
+
   @media @phone {
     padding: 0 1rem;
 
     nav .logo {
-      h1 {
-        display: none;
-      }
-
       svg {
         fill: @color-white;
 

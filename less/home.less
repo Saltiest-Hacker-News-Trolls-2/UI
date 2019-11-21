@@ -6,22 +6,55 @@
     animation: slideInFromBottom 0.5s ease-in-out forwards;
 
     .container {
-      max-width: 80vw;
+      max-width: 67vw;
 
       .hero {
-        transform: skewX(-10deg);
-        background-color: rgba(@color-offwhite, 0.5);
+        background-color: rgba(@color-nearblack, 0.85);
         padding: 5rem;
         text-align: center;
         .shadow(0px, 2px, 5px);
-        
+
         .content {
           .flex(column, center, center);
-          animation: growAndSkew,fadeIn 2s ease-out;
-          transform: skewX(10deg);
+          animation: grow, fadeIn 2s ease-out;
 
           *:not(:last-child) {
-            margin-bottom: 2rem;
+            margin-bottom: 4rem;
+          }
+
+          h1 {
+            color: @color-offwhite;
+          }
+
+          h2 {
+            font-size: 2rem;
+            font-family: "IBM Plex Mono", monospace;
+            max-width: 67%;
+            background-color: lighten(@color-nearblack, 10%);
+            color: @color-offwhite;
+            padding: 2rem;
+            .shadow(0px, 2px, 5px);
+          }
+
+          #magic {
+            display: inline-block;
+            color: @color-complement;
+            animation: wobble 2s 1s infinite;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    @media @desktop-sm {
+      .container {
+        max-width: 90vw;
+
+        .hero {
+          .content {
+            h2 {
+              max-width: 100%;
+            }
           }
         }
       }
@@ -29,13 +62,43 @@
 
     @media @phone {
       .container {
-        max-width: 90vw;
-
         .hero {
-          transform: skewX(0deg);
+          padding: 2rem;
 
           .content {
-            transform: inherit;
+            h1 {
+              font-size: 4rem;
+            }
+
+            h2 {
+              font-size: 1.6rem;
+            }
+
+            *:not(:last-child) {
+              margin-bottom: 3rem;
+            }
+          }
+        }
+      }
+    }
+
+    @media @phone-sm {
+      .container {
+        .hero {
+          padding: 2rem;
+
+          .content {
+            h1 {
+              font-size: 3rem;
+            }
+
+            h2 {
+              font-size: 1.4rem;
+            }
+
+            *:not(:last-child) {
+              margin-bottom: 2rem;
+            }
           }
         }
       }
