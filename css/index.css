@@ -305,46 +305,6 @@ h6 {
   filter: invert(100%);
   animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
-.about-container .about .blue {
-  background-image: linear-gradient(to bottom right, #00acca, #006b7e);
-  transition: 0.2s ease-out transform;
-}
-.about-container .about .blue:hover {
-  background-image: linear-gradient(to bottom right, #0096b1, #005564);
-  transform: translateY(-4px);
-}
-.about-container .about .blue:hover img {
-  transition: 0.2s ease-out all;
-  transform: scale(1.1);
-}
-.about-container .about .blue:hover p {
-  color: #e3e3e3;
-}
-.about-container .about .blue:last-of-type img {
-  margin-bottom: 2rem;
-}
-.about-container .about .orange {
-  background-image: linear-gradient(to bottom right, #de4714, #98310e);
-}
-.about-container .about .grey {
-  background-image: linear-gradient(to bottom right, #5a5a5a, #252729);
-}
-.about-container .about .grey h1,
-.about-container .about .grey h2 {
-  color: #fff;
-}
-.about-container .about .grey img {
-  filter: invert(100%);
-}
-.about-container .about .max-height-sm {
-  max-height: 10rem;
-}
-.about-container .about .center-text {
-  text-align: center;
-}
-.about-container .about .grow-icon img {
-  animation: grow 0.35s ease-in-out;
-}
 .about-container .about .box {
   width: 100%;
   padding: 2rem;
@@ -379,6 +339,49 @@ h6 {
 }
 .about-container .about .box a:hover img {
   filter: invert(100%);
+}
+.about-container .about .blue {
+  background-image: linear-gradient(to bottom right, #00acca, #006b7e);
+  transition: 0.2s ease-out transform;
+}
+.about-container .about .blue:hover {
+  background-image: linear-gradient(to bottom right, #0096b1, #005564);
+  transform: translateY(-4px);
+}
+.about-container .about .blue:hover img {
+  transition: 0.2s ease-out all;
+  transform: scale(1.1);
+}
+.about-container .about .blue:hover p {
+  color: #e3e3e3;
+}
+.about-container .about .blue:last-of-type img {
+  margin-bottom: 2rem;
+}
+.about-container .about .orange {
+  background-image: linear-gradient(to bottom right, #de4714, #98310e);
+}
+.about-container .about .grey {
+  background-image: linear-gradient(to bottom right, #5a5a5a, #252729);
+}
+.about-container .about .grey h1,
+.about-container .about .grey h2 {
+  color: #fff;
+}
+.about-container .about .grey img {
+  filter: invert(100%);
+}
+.about-container .about #github-text {
+  font-size: calc(8px + 1.5vw);
+}
+.about-container .about .max-height-sm {
+  max-height: 10rem;
+}
+.about-container .about .center-text {
+  text-align: center;
+}
+.about-container .about .grow-icon img {
+  animation: grow 0.35s ease-in-out;
 }
 .about-container .about .span1 {
   grid-column: span 1;
