@@ -458,6 +458,9 @@ h6 {
   .home-container .home .container .hero .content h2 {
     font-size: 1.6rem;
   }
+  .home-container .home .container .hero .content *:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }
 @media (max-width: 400px) {
   .home-container .home .container .hero {
@@ -468,6 +471,9 @@ h6 {
   }
   .home-container .home .container .hero .content h2 {
     font-size: 1.4rem;
+  }
+  .home-container .home .container .hero .content *:not(:last-child) {
+    margin-bottom: 2rem;
   }
 }
 .header {
