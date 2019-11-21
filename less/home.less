@@ -1,6 +1,6 @@
 .home-container {
   animation: setOverflowY 0.5s forwards;
-  
+
   .home {
     height: calc(100vh - @nav-height);
     .flex(column, center, center);
@@ -100,6 +100,30 @@
             *:not(:last-child) {
               margin-bottom: 2rem;
             }
+          }
+        }
+      }
+    }
+
+    @media @landscape {
+      .container .hero {
+        padding: 4vh;
+
+        .content {
+          h1 {
+            font-size: 8vh;
+          }
+
+          h2 {
+            font-size: 4vh;
+          }
+
+          *:not(:last-child) {
+            margin-bottom: 2rem;
+          }
+
+          .btn {
+            font-size: 4vh;
           }
         }
       }
