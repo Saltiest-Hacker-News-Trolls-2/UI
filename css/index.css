@@ -605,13 +605,4 @@ h6 {
   .header {
     padding: 0 1rem;
   }
-  .header nav .logo svg {
-    fill: #fff;
-  }
-  .header nav .logo svg:hover {
-    fill: #000;
-  }
-  .header nav .nav-links .nav-link:not(:last-child) {
-    margin-right: 1rem;
-  }
 }
