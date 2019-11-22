@@ -151,6 +151,10 @@ h5 {
 h6 {
   font-size: 1rem;
 }
+::selection {
+  background-color: #252729;
+  color: #de4714;
+}
 .btn {
   display: inline-block;
   font-size: 2rem;
