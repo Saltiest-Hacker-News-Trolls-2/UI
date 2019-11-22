@@ -42,6 +42,46 @@
       }
     }
 
+    .box {
+      width: 100%;
+      padding: 2rem;
+
+      img {
+        width: 50%;
+        min-width: 9rem;
+        max-width: 12rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 6rem;
+      }
+
+      h3 {
+        margin-bottom: 2.5rem;
+      }
+
+      a {
+        .flex(column, center, center);
+        text-decoration: none;
+        color: @color-black;
+        transition: 0.2s ease-in-out all;
+      }
+
+      a:hover {
+        color: @color-white;
+        transform: translateY(-3px);
+
+        img {
+          filter: invert(100%);
+        }
+      }
+    }
+
     .blue {
       background-image: linear-gradient(
         to bottom right,
@@ -100,6 +140,10 @@
       }
     }
 
+    #github-text {
+      font-size: calc(8px + 1.5vw);
+    }
+
     .max-height-sm {
       max-height: 10rem;
     }
@@ -111,46 +155,6 @@
     .grow-icon {
       img {
         animation: grow 0.35s ease-in-out;
-      }
-    }
-
-    .box {
-      width: 100%;
-      padding: 2rem;
-
-      img {
-        width: 50%;
-        min-width: 9rem;
-        max-width: 12rem;
-      }
-
-      p {
-        font-size: 1.6rem;
-        font-weight: bold;
-      }
-
-      h2 {
-        font-size: 6rem;
-      }
-
-      h3 {
-        margin-bottom: 2.5rem;
-      }
-
-      a {
-        .flex(column, center, center);
-        text-decoration: none;
-        color: @color-black;
-        transition: 0.2s ease-in-out all;
-      }
-
-      a:hover {
-        color: @color-white;
-        transform: translateY(-3px);
-
-        img {
-          filter: invert(100%);
-        }
       }
     }
 
