@@ -41,9 +41,6 @@
   }
 }
 @keyframes setOverflowY {
-  from {
-    overflow-y: hidden;
-  }
   to {
     overflow-y: visible;
   }
@@ -584,6 +581,9 @@ body::-webkit-scrollbar-thumb {
 }
 .header nav .logo h1:hover {
   color: #252729;
+}
+.header nav .logo h1:hover ~ img {
+  filter: invert(100%);
 }
 .header nav .hamburger {
   position: relative;
