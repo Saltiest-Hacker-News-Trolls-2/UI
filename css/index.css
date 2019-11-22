@@ -151,6 +151,17 @@ h5 {
 h6 {
   font-size: 1rem;
 }
+::selection {
+  background-color: #252729;
+  color: #de4714;
+}
+body::-webkit-scrollbar {
+  width: 1.25rem;
+  background-color: #252729;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #5a5a5a;
+}
 .btn {
   display: inline-block;
   font-size: 2rem;
@@ -428,7 +439,8 @@ h6 {
   }
 }
 .home-container {
-  animation: setOverflowY 0.5s forwards;
+  overflow-y: hidden;
+  animation: setOverflowY 2s forwards;
 }
 .home-container .home {
   height: calc(100vh - 5rem);
